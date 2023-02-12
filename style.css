@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root{
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-ray: hsl(0, 0%, 95%);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--Very-light-ray);
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+p{
+    color: var(--Transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400px;
+    font-size: .9em;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+}
+
+h2{
+    color: var(--Very-light-ray);
+    font-family: "Big Shoulders Display",sans-serif;
+    font-weight: 700px;
+    font-size: 2.5em;
+    margin-top: .5em;
+    text-transform: uppercase;
+
+}
+
+button{
+    border-color:transparent;
+    border-radius: 5em;
+    width: 9em;
+    height: 3em;
+    background-color: var(--Very-light-ray);
+    font-family: "Lexend Deca", sans-serif ;
+    margin-top: 7em;
+}
+
+    
+
+.sedan-box button{
+    color: var(--Bright-orange);
+}
+.suv-box button{
+    color: var(--Dark-cyan);
+}
+.luxury-box button{
+    color: var(--Very-dark-cyan);
+}
+
+button:hover{
+    color: var(--Very-light-ray);
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--Very-light-ray);
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    font-size: 15px;
+    width: 54em;
+    height: 30em;
+    text-align:left;
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+.sedan-box{
+    background-color: var(--Bright-orange);
+    width: 18em;
+    padding: 3em;
+
+}
+
+.suv-box{
+    background-color: var(--Dark-cyan);
+    width: 18em;
+    padding: 3em;
+}
+
+.luxury-box{
+    background-color: var(--Very-dark-cyan);
+    width: 18em;
+    padding: 3em;
+}
+
+/*-------------mobile desing---------------*/
+
+@media (max-width:700px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 69em;
+        width: 18em;
+    }
+    .sedan-box{
+        height: 23em;
+        padding: 2em;
+    }
+    .suv-box{
+        height: 23em;
+        padding: 2em;
+    }
+    .luxury-box{
+        height: 23em;
+        padding: 2em;
+    }
+    .button{
+        margin-top: 0em;
+    }
+    h3{
+        margin-top: 1em;
+    }
+    p{
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+    button{
+        margin-top: 1.5em;
+    }
+}
